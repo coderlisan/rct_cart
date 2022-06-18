@@ -3,6 +3,7 @@ import Main from './components/Main';
 import Basket from './components/Basket';
 import data from './data';
 import { useState } from 'react';
+
 function App() {
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
@@ -30,6 +31,7 @@ function App() {
       );
     }
   };
+  
   return (
     <div className="App">
       <Header countCartItems={cartItems.length}></Header>
